@@ -1,3 +1,7 @@
+package order;
+
+import order.Person;
+
 import java.util.Comparator;
 
 public class PersonAgeComparator implements Comparator<Person> {

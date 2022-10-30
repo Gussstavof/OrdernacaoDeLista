@@ -1,3 +1,5 @@
+package order;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -5,7 +7,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        List<Person>  personList = new ArrayList<Person>();
+        List<Person>  personList = new ArrayList<>();
 
         Person person1 = new Person();
         person1.setName("Maria");
