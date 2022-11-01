@@ -2,7 +2,6 @@ package order;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class Main {
@@ -28,21 +27,11 @@ public class Main {
 
         System.out.println("Sem ordem");
         System.out.println(personList);
-        personList.sort(new Comparator<Person>() {
-            @Override
-            public int compare(Person person1, Person person2) {
-                return person1.getName().compareTo(person2.getName());
-            }
-        });
+        personList.sort(( p1,  p2)-> p1.getName().compareTo(p2.getName()));
         System.out.println("Ordem alfabetica");
         System.out.println(personList);
         System.out.println("Ordem por idade");
-        personList.sort(new Comparator<Person>() {
-            @Override
-            public int compare(Person person1, Person person2) {
-                return person1.getAge() - person2.getAge();
-            }
-        });
+        personList.sort((p1, p2) -> p1.getAge() - p2.getAge());
         System.out.println(personList);
         Collections.reverse(personList);
         System.out.println(personList);
